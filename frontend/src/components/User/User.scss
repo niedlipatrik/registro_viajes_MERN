@@ -1,0 +1,110 @@
+.bgregister,
+.bglogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("/images/airportBG.png");
+  min-height: 50vh;
+}
+
+.register,
+.login {
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+  border-radius: 1.7em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #4a9effbb;
+  transition: all ease-in-out 0.7s;
+}
+.register input:not([type=checkbox]),
+.login input:not([type=checkbox]) {
+  all: unset;
+  border-radius: 0.5em;
+  color: #001d2e;
+  margin: 1em;
+  padding: 1em;
+  background-color: #0182fae8;
+  transition: all ease-in-out 0.7s;
+}
+.register .terms,
+.login .terms {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 1.5em;
+  cursor: pointer;
+  user-select: none;
+  text-align: justify;
+  font-weight: bold;
+  max-width: 26em;
+}
+.register .terms input,
+.login .terms input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.register .terms input:checked ~ .checkmark,
+.login .terms input:checked ~ .checkmark {
+  background-color: #0044aa;
+}
+.register .terms input:checked ~ .checkmark:after,
+.login .terms input:checked ~ .checkmark:after {
+  display: block;
+}
+.register .terms:hover input ~ .checkmark,
+.login .terms:hover input ~ .checkmark {
+  background-color: #5b8fff;
+}
+.register .terms .checkmark,
+.login .terms .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: #b1d9ff;
+}
+.register .terms .checkmark:after,
+.login .terms .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 2px;
+  width: 7.5px;
+  height: 15px;
+  border: solid #cbeaff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.register button,
+.login button {
+  all: unset;
+  background-color: #002ba1;
+  color: #83b9ff;
+  border-radius: 0.7em;
+  font-weight: bold;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.passwordRule,
+.passwordRule2 {
+  color: #a00000;
+  font-weight: bold;
+  font-style: italic;
+  display: none;
+  margin: -0.8em;
+}
+
+.pos-f-t {
+  order: 1;
+}
+
+

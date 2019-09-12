@@ -1,0 +1,81 @@
+footer {
+    padding: 1.5em;
+    font-size: 1.4em;
+    color: white;
+    background-color: #141939;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 5em;
+        flex-direction: column;
+    }
+
+
+    input {
+        font-size: 0.6em;
+        padding: 0.5em;
+        width: 80%;
+    }
+
+    button {
+        all: unset;
+        display: inline;
+        color: black;
+        text-align: center;
+        background-color: #fef200;
+        font-size: 1.3em;
+        padding: 0.6em;
+    }
+     .horario {
+        padding-top: 2em;
+        font-size: 0.8em;
+    }
+    
+     .ayuda,
+     .informacion,
+     .suscribete {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+     p {
+        padding-left: 0.8em;
+    }
+    @media (max-width: 768px) {
+
+         .ayuda,
+         .informacion,
+         .suscribete {
+            display: flex;
+            margin: 0 auto;
+            margin-top: 2em;
+        }
+    }
+    @media (max-width: 768px) {
+         .informacion {
+            display: none;
+        }
+    }
+}
+.copyright {
+    border: solid black 0.1em;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    background-color: #141939;
+    margin: 0 auto;
+}
+.socialMedia {
+    margin: 0.4em;
+  }
+  .socialMedia img {
+    width: 2em;
+  }
+  @media (max-width: 768px) {
+    .socialMedia {
+      display: none;
+    }
+  }

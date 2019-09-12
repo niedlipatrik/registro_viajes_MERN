@@ -1,0 +1,21 @@
+{
+  "name": "viajes-MERN",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"concurrently \"npm run dev:front\"  \"npm run dev:back\" ",
+    "dev:front":"cd frontend && npm run dev",
+    "dev:back":"cd backend && npm run dev",
+    "install:front":"cd ../frontend && npm install",
+    "install:back":"cd backend && npm install ",
+    "postinstall": "npm run install:front && npm run install:back "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  }
+}
